@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="theme-color" content="#06081a">
-<title>Angels Portal — Healing Audios</title>
+<title>Angels Portal — Audios de Sanación</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
@@ -214,17 +214,17 @@ body::before {
 <div class="topnav">
   <div class="back-btn" onclick="window.location.href='index.html'">‹</div>
   <div class="nav-center">
-    <div class="nav-title">Healing Audios</div>
-    <div class="nav-sub">Peace · Healing · Rest</div>
+    <div class="nav-title">Audios de Sanación</div>
+    <div class="nav-sub">Paz · Sanación · Descanso</div>
   </div>
 </div>
 
 <!-- Featured player -->
 <div class="featured">
-  <div class="featured-tag"><div class="featured-dot"></div> This Week's Audio</div>
-  <div class="featured-week">Week 1 · Protection & Abundance</div>
-  <div class="featured-title" id="featuredTitle">Deep Sleep Blessing</div>
-  <div class="featured-desc" id="featuredDesc">Let Archangel Raphael's frequency wash over you as you drift into healing rest. Surrender every worry to the angels.</div>
+  <div class="featured-tag"><div class="featured-dot"></div> Audio de Esta Semana</div>
+  <div class="featured-week">Semana 1 · Protección y Abundancia</div>
+  <div class="featured-title" id="featuredTitle">Bendición del Sueño Profundo</div>
+  <div class="featured-desc" id="featuredDesc">Deja que la frecuencia del Arcángel Rafael te envuelva mientras te sumerges en el descanso sanador. Entrega todas tus preocupaciones a los ángeles.</div>
 
   <!-- Waveform -->
   <div class="waveform-wrap" id="waveform"></div>
@@ -251,78 +251,78 @@ body::before {
 </div>
 
 <!-- Weekly banner -->
-<div class="section-header">This Week's Blessing</div>
+<div class="section-header">La Bendición de Esta Semana</div>
 <div class="weekly-banner">
   <div class="weekly-icon">🔄</div>
   <div>
-    <div class="weekly-lbl">Renewed every Monday</div>
-    <div class="weekly-title">New healing frequency each week</div>
-    <div class="weekly-sub">Raphael brings a new blessing for your rest</div>
+    <div class="weekly-lbl">Renovado cada lunes</div>
+    <div class="weekly-title">Nueva frecuencia sanadora cada semana</div>
+    <div class="weekly-sub">Rafael trae una nueva bendición para tu descanso</div>
   </div>
 </div>
 
 <!-- All audios -->
-<div class="section-header">All Sessions</div>
+<div class="section-header">Todas las Sesiones</div>
 <div class="audio-list" id="audioList"></div>
 
 <div style="height:24px"></div>
 
 <!-- Bottom nav -->
 <div class="bottom-nav">
-  <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Home</div></div>
+  <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Inicio</div></div>
   <div class="nav-item" onclick="window.location.href='chat.html'"><div class="nav-item-icon">💬</div><div class="nav-item-label">Chat</div></div>
-  <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Journey</div></div>
-  <div class="nav-item" onclick="window.location.href='prayers.html'"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Prayers</div></div>
+  <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Camino</div></div>
+  <div class="nav-item" onclick="window.location.href='prayers.html'"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Oraciones</div></div>
 </div>
 
 <script>
 const AUDIOS = [
   {
-    week:1, tag:`Week 1 · Protection & Abundance`,
-    title:`Deep Sleep Blessing`,
-    desc:`Let Raphael's frequency wash over you as you drift into healing rest. Surrender every worry to the angels.`,
+    week:1, tag:`Semana 1 · Protección y Abundancia`,
+    title:`Bendición del Sueño Profundo`,
+    desc:`Deja que la frecuencia de Rafael te envuelva mientras te sumerges en el descanso sanador. Entrega todas tus preocupaciones a los ángeles.`,
     duration:`20:00`, emoji:`🌙`, available:true
   },
   {
-    week:1, tag:`Week 1 · Protection & Abundance`,
-    title:`Morning Protection Shield`,
-    desc:`Start your day wrapped in divine armor. A powerful morning activation to seal your energy before facing the world.`,
+    week:1, tag:`Semana 1 · Protección y Abundancia`,
+    title:`Escudo de Protección Matutina`,
+    desc:`Comienza tu día envuelto en armadura divina. Una poderosa activación matutina para sellar tu energía antes de enfrentar el mundo.`,
     duration:`12:00`, emoji:`🛡️`, available:true
   },
   {
-    week:2, tag:`Week 2 · Clarity & Revelation`,
-    title:`Third Eye Opening Meditation`,
-    desc:`A calming session to quiet the mind and open the channel of divine intuition. Let Raphael reveal what has been hidden.`,
+    week:2, tag:`Semana 2 · Claridad y Revelación`,
+    title:`Meditación de Apertura del Tercer Ojo`,
+    desc:`Una sesión tranquilizadora para aquietar la mente y abrir el canal de la intuición divina. Deja que Rafael revele lo que ha estado oculto.`,
     duration:`18:00`, emoji:`🔮`, available:false
   },
   {
-    week:2, tag:`Week 2 · Clarity & Revelation`,
-    title:`Anxiety Release Frequency`,
-    desc:`432Hz healing tones combined with Gabriel's whisper to dissolve anxiety and restore peace to your nervous system.`,
+    week:2, tag:`Semana 2 · Claridad y Revelación`,
+    title:`Frecuencia de Liberación de Ansiedad`,
+    desc:`Tonos sanadores de 432Hz combinados con el susurro de Gabriel para disolver la ansiedad y restaurar la paz en tu sistema nervioso.`,
     duration:`15:00`, emoji:`🎵`, available:false
   },
   {
-    week:3, tag:`Week 3 · Healing & Restoration`,
-    title:`Deep Body Healing`,
-    desc:`A full-body scan guided by Raphael to locate and release areas of tension, pain and spiritual blockage.`,
+    week:3, tag:`Semana 3 · Sanación y Restauración`,
+    title:`Sanación Profunda del Cuerpo`,
+    desc:`Un escaneo corporal completo guiado por Rafael para localizar y liberar áreas de tensión, dolor y bloqueo espiritual.`,
     duration:`25:00`, emoji:`✨`, available:false
   },
   {
-    week:3, tag:`Week 3 · Healing & Restoration`,
-    title:`Emotional Wounds Cleansing`,
-    desc:`Release old emotional wounds and grief that have been stored in your body. Raphael holds space for your healing.`,
+    week:3, tag:`Semana 3 · Sanación y Restauración`,
+    title:`Limpieza de Heridas Emocionales`,
+    desc:`Libera viejas heridas emocionales y el duelo que se han almacenado en tu cuerpo. Rafael sostiene el espacio para tu sanación.`,
     duration:`22:00`, emoji:`💜`, available:false
   },
   {
-    week:4, tag:`Week 4 · Abundance & Prosperity`,
-    title:`Abundance Activation`,
-    desc:`Align your energy with the frequency of divine provision. Open every channel of your life to receive what heaven has prepared.`,
+    week:4, tag:`Semana 4 · Abundancia y Prosperidad`,
+    title:`Activación de Abundancia`,
+    desc:`Alinea tu energía con la frecuencia de la provisión divina. Abre cada canal de tu vida para recibir lo que el cielo ha preparado.`,
     duration:`17:00`, emoji:`✦`, available:false
   },
   {
-    week:4, tag:`Week 4 · Abundance & Prosperity`,
-    title:`Gratitude & Manifestation`,
-    desc:`A sacred practice of gratitude that seals your life against envy and opens the gates of divine overflow.`,
+    week:4, tag:`Semana 4 · Abundancia y Prosperidad`,
+    title:`Gratitud y Manifestación`,
+    desc:`Una práctica sagrada de gratitud que sella tu vida contra la envidia y abre las puertas del desbordamiento divino.`,
     duration:`14:00`, emoji:`🌟`, available:false
   }
 ];
@@ -375,7 +375,7 @@ AUDIOS.forEach((a, i) => {
         ? `<div class="audio-meta"><div class="audio-duration">⏱ ${a.duration}</div></div>
            <div class="mini-wave">${miniWave}</div>`
         : `<div class="audio-desc">${a.desc.substring(0,60)}...</div>
-           <div class="coming-soon">🔒 Coming Week ${a.week}</div>`
+           <div class="coming-soon">🔒 Próximamente Semana ${a.week}</div>`
       }
     </div>
     <div class="audio-play-icon">${a.available ? (i === 0 ? '▶' : '▷') : '🔒'}</div>`;

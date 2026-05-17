@@ -109,7 +109,7 @@ export default async function handler(req) {
 
   try {
     const body = await req.json();
-    const { history = [], chatHistory = [], userName = 'dear one', email = '', memory = '' } = body;
+    const { history = [], chatHistory = [], userName = 'querido/a', email = '', memory = '' } = body;
 
     const apiKey = process.env.GEMINI_API_KEY;
     const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -185,11 +185,11 @@ Memory from past conversations: ${memory || 'This appears to be your first conve
     console.error('Chat error:', err.message);
 
     if (err.message === 'RATE_LIMIT') {
-      return json({ reply: 'I am receiving many messages at once. Please wait a moment and speak to me again. 🙏' });
+      return json({ reply: 'Estoy recibiendo muchos mensajes a la vez. Por favor, espera un momento y habla conmigo de nuevo. 🙏' });
     }
     if (err.message === 'EMPTY_RESPONSE') {
-      return json({ reply: 'Something disturbed our connection for a moment. Could you repeat what you said?' });
+      return json({ reply: 'Algo perturbó nuestra conexión por un momento. ¿Podrías repetir lo que dijiste?' });
     }
-    return json({ reply: 'I sense a disturbance in our connection. Please try again in a few seconds.' });
+    return json({ reply: 'Siento una perturbación en nuestra conexión. Por favor, inténtalo de nuevo en unos segundos.' });
   }
 }

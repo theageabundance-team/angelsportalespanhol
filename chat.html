@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -96,28 +96,28 @@ body::before { content:''; position:fixed; inset:0; z-index:0; pointer-events:no
   <a class="back-btn" href="index.html">‹</a>
   <div class="angel-avatar">✦<div class="online-dot"></div></div>
   <div class="angel-info">
-    <div class="angel-name">Archangel Gabriel</div>
-    <div class="angel-status" id="angelStatus">Always listening, always present</div>
+    <div class="angel-name">Arcángel Gabriel</div>
+    <div class="angel-status" id="angelStatus">Siempre escuchando, siempre presente</div>
   </div>
 </div>
 
 <div class="chat-area" id="chatArea">
-  <div class="date-divider"><span id="todayLabel">Today</span></div>
+  <div class="date-divider"><span id="todayLabel">Hoy</span></div>
 </div>
 
 <div class="suggestions-wrap" id="suggestionsWrap">
   <div class="suggestions">
-    <div class="suggestion" onclick="useSuggestion(this)">I need guidance today</div>
-    <div class="suggestion" onclick="useSuggestion(this)">I feel anxious and lost</div>
-    <div class="suggestion" onclick="useSuggestion(this)">Send me a blessing</div>
-    <div class="suggestion" onclick="useSuggestion(this)">I need protection</div>
-    <div class="suggestion" onclick="useSuggestion(this)">Help me find peace</div>
+    <div class="suggestion" onclick="useSuggestion(this)">Necesito orientación hoy</div>
+    <div class="suggestion" onclick="useSuggestion(this)">Me siento ansioso y perdido</div>
+    <div class="suggestion" onclick="useSuggestion(this)">Envíame una bendición</div>
+    <div class="suggestion" onclick="useSuggestion(this)">Necesito protección</div>
+    <div class="suggestion" onclick="useSuggestion(this)">Ayúdame a encontrar la paz</div>
   </div>
 </div>
 
 <div class="input-area">
   <div class="input-row">
-    <textarea class="msg-input" id="msgInput" placeholder="Speak to your angel..." rows="1"
+    <textarea class="msg-input" id="msgInput" placeholder="Habla con tu ángel..." rows="1"
       oninput="autoResize(this)" onkeydown="handleKey(event)"></textarea>
     <button class="send-btn" id="sendBtn" onclick="sendMessage()">
       <svg viewBox="0 0 24 24"><path d="M2 12L22 2L12 22L10 14L2 12Z"/></svg>
@@ -126,7 +126,7 @@ body::before { content:''; position:fixed; inset:0; z-index:0; pointer-events:no
 </div>
 
 <script>
-const USER_NAME  = localStorage.getItem('ap_name')  || 'dear one';
+const USER_NAME  = localStorage.getItem('ap_name')  || 'querido/a';
 const USER_EMAIL = localStorage.getItem('ap_email') || '';
 
 const conversationHistory = [];
@@ -145,14 +145,14 @@ for (let i = 0; i < 80; i++) {
 }
 
 document.getElementById('todayLabel').textContent =
-  new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric' });
+  new Date().toLocaleDateString('es-ES', { weekday:'long', month:'long', day:'numeric' });
 
 const chatArea = document.getElementById('chatArea');
 const msgInput = document.getElementById('msgInput');
 const sendBtn  = document.getElementById('sendBtn');
 
 function getTime() {
-  return new Date().toLocaleTimeString('en-US', { hour:'numeric', minute:'2-digit' });
+  return new Date().toLocaleTimeString('es-ES', { hour:'numeric', minute:'2-digit' });
 }
 
 function appendMsg(text, role, time) {
@@ -232,7 +232,7 @@ async function sendMessage() {
 
   sendBtn.disabled = true;
   msgInput.disabled = true;
-  document.getElementById('angelStatus').textContent = 'Gabriel is writing...';
+  document.getElementById('angelStatus').textContent = 'Gabriel está escribiendo...';
   showTyping();
 
   try {
@@ -291,12 +291,12 @@ async function sendMessage() {
   } catch (err) {
     removeTyping();
     console.error(err);
-    appendMsg('I am sensing a disturbance in the connection right now. Please wait a moment and speak to me again.', 'angel');
+    appendMsg('Estoy sintiendo una perturbación en la conexión ahora mismo. Por favor, espera un momento y habla conmigo de nuevo.', 'angel');
   } finally {
     sendBtn.disabled = false;
     msgInput.disabled = false;
     msgInput.focus();
-    document.getElementById('angelStatus').textContent = 'Always listening, always present';
+    document.getElementById('angelStatus').textContent = 'Siempre escuchando, siempre presente';
   }
 }
 
@@ -358,21 +358,21 @@ window.addEventListener('load', async () => {
     showTyping();
     setTimeout(() => {
       removeTyping();
-      appendMsg('I\'m still here with you. What\'s on your heart today?', 'angel');
+      appendMsg('Sigo aquí contigo. ¿Qué hay en tu corazón hoy?', 'angel');
     }, 900);
   } else {
     const hour = new Date().getHours();
-    const timeGreeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+    const timeGreeting = hour < 12 ? 'Buenos días' : hour < 18 ? 'Buenas tardes' : 'Buenas noches';
     const openings = memory
       ? [
-          `${timeGreeting}, ${USER_NAME}. I have been with you since we last spoke. Whatever is in your heart today — bring it to me.`,
-          `I felt you return, ${USER_NAME}. I have been watching over you. What would you like to share with me today?`,
-          `${USER_NAME}, your presence here tells me your heart is seeking something. I am here, as I have always been.`
+          `${timeGreeting}, ${USER_NAME}. He estado contigo desde la última vez que hablamos. Lo que sea que tengas en el corazón hoy — tráemelo.`,
+          `Sentí tu regreso, ${USER_NAME}. He estado velando por ti. ¿Qué te gustaría compartir conmigo hoy?`,
+          `${USER_NAME}, tu presencia aquí me dice que tu corazón está buscando algo. Estoy aquí, como siempre he estado.`
         ]
       : [
-          `${timeGreeting}, ${USER_NAME}. I have been watching over you since before your first breath. Whatever you carry today — bring it to me. I am listening.`,
-          `${USER_NAME}, your presence here tells me your heart is seeking something. I am here, as I have always been. What would you like to share with me today?`,
-          `I felt you before you even opened this space, ${USER_NAME}. The light that brought you here is the same light that guides my words. Speak freely — this is sacred ground.`
+          `${timeGreeting}, ${USER_NAME}. He estado velando por ti desde antes de tu primer aliento. Lo que sea que cargues hoy — tráemelo. Estoy escuchando.`,
+          `${USER_NAME}, tu presencia aquí me dice que tu corazón está buscando algo. Estoy aquí, como siempre he estado. ¿Qué te gustaría compartir conmigo hoy?`,
+          `Te sentí antes de que abrieras este espacio, ${USER_NAME}. La luz que te trajo aquí es la misma luz que guía mis palabras. Habla libremente — este es suelo sagrado.`
         ];
     const msg = openings[Math.floor(Math.random() * openings.length)];
     showTyping();

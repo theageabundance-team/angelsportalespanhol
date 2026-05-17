@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -390,8 +390,8 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
 <div class="streak-toast" id="streakToast">
   <div class="toast-flame">🔥</div>
   <div class="toast-body">
-    <div class="toast-title" id="toastTitle">Day 1 streak!</div>
-    <div class="toast-sub" id="toastSub">Your connection with Gabriel begins.</div>
+    <div class="toast-title" id="toastTitle">¡Día 1 de seguido!</div>
+    <div class="toast-sub" id="toastSub">Tu conexión con Gabriel comienza.</div>
     <div class="toast-dots" id="toastDots"></div>
   </div>
   <button class="toast-close" onclick="closeStreakToast()">✕</button>
@@ -402,9 +402,9 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
 <!-- Celebration -->
 <div class="celebration" id="celebration">
   <div class="celebration-ring">🕯️</div>
-  <div class="celebration-heard">Heaven has heard</div>
-  <div class="celebration-message" id="celebrationMsg">Your prayer has been received</div>
-  <div class="celebration-angel" id="celebrationAngel">— Archangel Gabriel</div>
+  <div class="celebration-heard">El Cielo ha escuchado</div>
+  <div class="celebration-message" id="celebrationMsg">Tu oración ha sido recibida</div>
+  <div class="celebration-angel" id="celebrationAngel">— Arcángel Gabriel</div>
 </div>
 <div class="particles" id="particles"></div>
 
@@ -424,8 +424,8 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
     <div class="modal-prayer-text" id="modalPrayerText"></div>
     <div class="modal-ornament">✦ · ✦ · ✦</div>
     <div class="modal-actions">
-      <button class="modal-pray-btn" id="modalPrayBtn" onclick="markPrayed()">🙏 I have prayed this today</button>
-      <button class="modal-share-btn">↑ Share</button>
+      <button class="modal-pray-btn" id="modalPrayBtn" onclick="markPrayed()">🙏 He rezado esto hoy</button>
+      <button class="modal-share-btn">↑ Compartir</button>
     </div>
   </div>
 </div>
@@ -442,13 +442,13 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
     <div class="logo-area">
       <div class="logo-symbol">✦</div>
       <div class="logo-title">Angels Portal</div>
-      <div class="logo-subtitle">Your guardian angel is waiting.<br>Enter to begin your journey.</div>
+      <div class="logo-subtitle">Tu ángel guardián te está esperando.<br>Entra para comenzar tu camino.</div>
     </div>
     <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
-    <div class="field"><label>Your Name</label><input type="text" id="nameInput" placeholder="Enter your name here" autocomplete="given-name"></div>
-    <div class="field"><label>Your Email</label><input type="email" id="emailInput" placeholder="your@email.com" autocomplete="email"></div>
-    <button class="btn-gold" onclick="enterPortal()">Enter the Portal ✦</button>
-    <div class="footer-note">Your sanctuary is private and sacred.<br>No one else will have access to it.</div>
+    <div class="field"><label>Tu Nombre</label><input type="text" id="nameInput" placeholder="Escribe tu nombre aquí" autocomplete="given-name"></div>
+    <div class="field"><label>Tu Correo Electrónico</label><input type="email" id="emailInput" placeholder="tu@correo.com" autocomplete="email"></div>
+    <button class="btn-gold" onclick="enterPortal()">Entrar al Portal ✦</button>
+    <div class="footer-note">Tu santuario es privado y sagrado.<br>Nadie más tendrá acceso a él.</div>
   </div>
 </div>
 
@@ -465,62 +465,62 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
     <div class="hero-top">
       <div class="hero-angel-ring">✦</div>
       <div>
-        <div class="hero-greeting">Your Sanctuary</div>
-        <div class="hero-name" id="heroName">Welcome, Ana</div>
-        <div class="hero-angel">✦ Guardian: Archangel Gabriel</div>
+        <div class="hero-greeting">Tu Santuario</div>
+        <div class="hero-name" id="heroName">Bienvenida, Ana</div>
+        <div class="hero-angel">✦ Guardián: Arcángel Gabriel</div>
       </div>
     </div>
     <div class="streak-row">
-      <div class="streak-pill" onclick="window.location.href='journey.html'"><div class="streak-icon">🔥</div><div><div class="streak-val" id="streakVal">7</div><div class="streak-lbl">Day Streak</div></div></div>
-      <div class="streak-pill" onclick="window.location.href='journey.html'"><div class="streak-icon">🏆</div><div><div class="streak-val">3</div><div class="streak-lbl">Unlocked</div></div></div>
-      <div class="streak-pill" onclick="window.location.href='journey.html'"><div class="streak-icon">⭐</div><div><div class="streak-val">2</div><div class="streak-lbl">To Unlock</div></div></div>
+      <div class="streak-pill" onclick="window.location.href='journey.html'"><div class="streak-icon">🔥</div><div><div class="streak-val" id="streakVal">7</div><div class="streak-lbl">Días Seguidos</div></div></div>
+      <div class="streak-pill" onclick="window.location.href='journey.html'"><div class="streak-icon">🏆</div><div><div class="streak-val">3</div><div class="streak-lbl">Desbloqueado</div></div></div>
+      <div class="streak-pill" onclick="window.location.href='journey.html'"><div class="streak-icon">⭐</div><div><div class="streak-val">2</div><div class="streak-lbl">Por Desbloquear</div></div></div>
     </div>
   </div>
-  <div class="section-header dash-animate">Your Angel Awaits</div>
+  <div class="section-header dash-animate">Tu Ángel Te Espera</div>
   <div class="chat-hero dash-animate" onclick="window.location.href='chat.html'">
     <div class="chat-hero-top">
       <div class="chat-icon-wrap">💬</div>
       <div>
-        <div class="chat-live"><div class="live-dot"></div> Live Connection</div>
-        <div class="chat-hero-title">Talk to Archangel Gabriel</div>
+        <div class="chat-live"><div class="live-dot"></div> Conexión en Vivo</div>
+        <div class="chat-hero-title">Habla con el Arcángel Gabriel</div>
       </div>
     </div>
-    <div class="chat-hero-desc">Your angel has a message for you today. Ask anything — he is always listening, always present.</div>
-    <div class="chat-hero-btn">Open Your Chat ✦</div>
+    <div class="chat-hero-desc">Tu ángel tiene un mensaje para ti hoy. Pregunta lo que sea — siempre está escuchando, siempre presente.</div>
+    <div class="chat-hero-btn">Abrir tu Chat ✦</div>
     <div class="chat-deco">✦</div>
   </div>
-  <div class="section-header dash-animate">Gabriel's Intention for Today</div>
+  <div class="section-header dash-animate">La Intención de Gabriel para Hoy</div>
   <div class="intention-card dash-animate">
-    <div class="intention-tag"><div class="live-dot"></div> Daily Intention</div>
-    <div class="intention-text">"Gabriel asks that today you take 2 minutes of silence — close your eyes, breathe, and listen to what your heart has been trying to tell you."</div>
+    <div class="intention-tag"><div class="live-dot"></div> Intención Diaria</div>
+    <div class="intention-text">"Gabriel te pide que hoy tomes 2 minutos de silencio — cierra los ojos, respira y escucha lo que tu corazón ha estado tratando de decirte."</div>
     <div class="intention-actions">
-      <button class="btn-accept" id="acceptBtn" onclick="acceptIntention()">✦ Accept This Intention</button>
-      <button class="btn-skip" onclick="this.closest('.intention-card').style.opacity='0.4'">Later</button>
+      <button class="btn-accept" id="acceptBtn" onclick="acceptIntention()">✦ Aceptar Esta Intención</button>
+      <button class="btn-skip" onclick="this.closest('.intention-card').style.opacity='0.4'">Más tarde</button>
     </div>
   </div>
-  <div class="section-header dash-animate">This Week's Sacred Tools</div>
+  <div class="section-header dash-animate">Las Herramientas Sagradas de Esta Semana</div>
   <div class="weekly-banner dash-animate">
     <div class="weekly-icon">🔄</div>
     <div>
-      <div class="weekly-label">Renewed every Monday</div>
-      <div class="weekly-title">New week, new blessings</div>
-      <div class="weekly-sub">Gabriel brings fresh guidance each week</div>
+      <div class="weekly-label">Renovado cada lunes</div>
+      <div class="weekly-title">Nueva semana, nuevas bendiciones</div>
+      <div class="weekly-sub">Gabriel trae nueva guía cada semana</div>
     </div>
   </div>
   <div class="tools-list" style="margin-top:12px">
     <div class="tool-card prayer dash-animate" onclick="window.location.href='prayers.html'">
       <div class="tool-icon">🕯️</div>
-      <div class="tool-info"><div class="tool-tag">Daily Power</div><div class="tool-title">Sacred Prayers</div><div class="tool-desc">This week: prayers for protection and abundance.</div><span class="tool-new">✦ Updated Monday</span></div>
+      <div class="tool-info"><div class="tool-tag">Poder Diario</div><div class="tool-title">Oraciones Sagradas</div><div class="tool-desc">Esta semana: oraciones de protección y abundancia.</div><span class="tool-new">✦ Actualizado los Lunes</span></div>
       <div class="tool-arrow">›</div>
     </div>
     <div class="tool-card ritual dash-animate" onclick="window.location.href='rituals.html'">
       <div class="tool-icon">🌿</div>
-      <div class="tool-info"><div class="tool-tag">Rituals of Light</div><div class="tool-title">Cleansing & Protection</div><div class="tool-desc">This week: ritual to remove envy from your home.</div><span class="tool-new">✦ Updated Monday</span></div>
+      <div class="tool-info"><div class="tool-tag">Rituales de Luz</div><div class="tool-title">Limpieza y Protección</div><div class="tool-desc">Esta semana: ritual para eliminar la envidia de tu hogar.</div><span class="tool-new">✦ Actualizado los Lunes</span></div>
       <div class="tool-arrow">›</div>
     </div>
     <div class="tool-card audio dash-animate" onclick="window.location.href='audios.html'">
       <div class="tool-icon">🎧</div>
-      <div class="tool-info"><div class="tool-tag">Healing Audios</div><div class="tool-title">Peace & Healing Sessions</div><div class="tool-desc">This week: deep sleep blessing with Gabriel's frequency.</div><span class="tool-new">✦ Updated Monday</span>
+      <div class="tool-info"><div class="tool-tag">Audios de Sanación</div><div class="tool-title">Sesiones de Paz y Sanación</div><div class="tool-desc">Esta semana: bendición del sueño profundo con la frecuencia de Gabriel.</div><span class="tool-new">✦ Actualizado los Lunes</span>
         <div class="waveform"><div class="wbar" style="--wd:0.8s;--wdl:0s;--wn:4px;--wx:16px"></div><div class="wbar" style="--wd:1.1s;--wdl:0.1s;--wn:6px;--wx:22px"></div><div class="wbar" style="--wd:0.9s;--wdl:0.2s;--wn:3px;--wx:14px"></div><div class="wbar" style="--wd:1.3s;--wdl:0.05s;--wn:7px;--wx:20px"></div><div class="wbar" style="--wd:0.7s;--wdl:0.3s;--wn:4px;--wx:18px"></div><div class="wbar" style="--wd:1.0s;--wdl:0.15s;--wn:5px;--wx:24px"></div><div class="wbar" style="--wd:0.85s;--wdl:0.25s;--wn:3px;--wx:12px"></div><div class="wbar" style="--wd:1.2s;--wdl:0s;--wn:6px;--wx:20px"></div></div>
       </div>
       <div class="tool-arrow">›</div>
@@ -529,45 +529,45 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
   </div>
   <div style="height:24px"></div>
   <div class="bottom-nav">
-    <div class="nav-item active"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Home</div></div>
+    <div class="nav-item active"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Inicio</div></div>
     <div class="nav-item" onclick="window.location.href='chat.html'"><div class="nav-item-icon">💬</div><div class="nav-item-label">Chat</div></div>
-    <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Journey</div></div>
-    <div class="nav-item" onclick="window.location.href='prayers.html'"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Prayers</div></div>
+    <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Camino</div></div>
+    <div class="nav-item" onclick="window.location.href='prayers.html'"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Oraciones</div></div>
   </div>
 </div>
 
 <!-- ===== JOURNEY ===== -->
 <div class="screen" id="screen-journey">
   <div class="topnav">
-    <div class="nav-logo"><span>✦</span> Your Journey</div>
+    <div class="nav-logo"><span>✦</span> Tu Camino</div>
     <div class="nav-right">
       <div class="theme-toggle" onclick="toggleTheme()" id="journeyToggle">🌙</div>
       <div class="nav-avatar" id="navInitial2">A</div>
     </div>
   </div>
   <div class="journey-hero">
-    <div class="journey-title">Your Connection with Gabriel</div>
-    <div class="journey-sub">Every day you return, your bond with your angel grows stronger.</div>
+    <div class="journey-title">Tu Conexión con Gabriel</div>
+    <div class="journey-sub">Cada día que regresas, tu vínculo con tu ángel se fortalece.</div>
   </div>
   <div class="streak-display">
     <div class="streak-number">7</div>
-    <div class="streak-label">Days of Connection</div>
+    <div class="streak-label">Días de Conexión</div>
     <div class="streak-days" id="streakDays"></div>
   </div>
-  <div class="section-header" style="padding-top:8px">Sacred Gifts from Gabriel</div>
+  <div class="section-header" style="padding-top:8px">Dones Sagrados de Gabriel</div>
   <div class="unlocks-grid">
-    <div class="unlock-card unlocked"><div class="unlock-icon" style="background:rgba(212,160,23,0.12)">🌙</div><div class="unlock-info"><div class="unlock-days">3 Days — Unlocked</div><div class="unlock-title">Dream Interpretation</div><div class="unlock-desc">Gabriel decodes the symbols in your dreams and reveals hidden messages from Heaven.</div></div><div><div class="badge-unlocked">Open</div></div></div>
-    <div class="unlock-card unlocked"><div class="unlock-icon" style="background:rgba(124,92,191,0.14)">🔮</div><div class="unlock-info"><div class="unlock-days">7 Days — Unlocked</div><div class="unlock-title">Your Angel's Personal Letter</div><div class="unlock-desc">A unique message written by Gabriel's wisdom — addressed only to you, about your current moment in life.</div></div><div><div class="badge-unlocked">Open</div></div></div>
-    <div class="unlock-card unlocked"><div class="unlock-icon" style="background:rgba(58,170,138,0.14)">🌿</div><div class="unlock-info"><div class="unlock-days">14 Days — Unlocked</div><div class="unlock-title">The Sacred Name Ritual</div><div class="unlock-desc">A powerful ritual using your angel's true name to call in protection and abundance for your home.</div></div><div><div class="badge-unlocked">Open</div></div></div>
-    <div class="unlock-card locked"><div class="unlock-icon" style="background:rgba(212,85,85,0.14)">🕯️</div><div class="unlock-info"><div class="unlock-days">21 Days — Locked</div><div class="unlock-title">Candlelight Healing Ceremony</div><div class="unlock-desc">A guided 21-minute ceremony to release grief, fear and spiritual blockages through sacred flame and prayer.</div></div><div><div class="badge-locked">🔒 14 more days</div></div></div>
-    <div class="unlock-card locked"><div class="unlock-icon" style="background:rgba(196,122,30,0.14)">👁️</div><div class="unlock-info"><div class="unlock-days">30 Days — Locked</div><div class="unlock-title">The Angel's Prophecy</div><div class="unlock-desc">Gabriel reveals a spiritual vision for the next chapter of your life — your mission, your blessings, and what Heaven is preparing for you.</div></div><div><div class="badge-locked">🔒 23 more days</div></div></div>
+    <div class="unlock-card unlocked"><div class="unlock-icon" style="background:rgba(212,160,23,0.12)">🌙</div><div class="unlock-info"><div class="unlock-days">3 Días — Desbloqueado</div><div class="unlock-title">Interpretación de Sueños</div><div class="unlock-desc">Gabriel descifra los símbolos en tus sueños y revela mensajes ocultos del Cielo.</div></div><div><div class="badge-unlocked">Abrir</div></div></div>
+    <div class="unlock-card unlocked"><div class="unlock-icon" style="background:rgba(124,92,191,0.14)">🔮</div><div class="unlock-info"><div class="unlock-days">7 Días — Desbloqueado</div><div class="unlock-title">La Carta Personal de tu Ángel</div><div class="unlock-desc">Un mensaje único escrito por la sabiduría de Gabriel — dirigido solo a ti, sobre tu momento actual en la vida.</div></div><div><div class="badge-unlocked">Abrir</div></div></div>
+    <div class="unlock-card unlocked"><div class="unlock-icon" style="background:rgba(58,170,138,0.14)">🌿</div><div class="unlock-info"><div class="unlock-days">14 Días — Desbloqueado</div><div class="unlock-title">El Ritual del Nombre Sagrado</div><div class="unlock-desc">Un poderoso ritual usando el verdadero nombre de tu ángel para invocar protección y abundancia para tu hogar.</div></div><div><div class="badge-unlocked">Abrir</div></div></div>
+    <div class="unlock-card locked"><div class="unlock-icon" style="background:rgba(212,85,85,0.14)">🕯️</div><div class="unlock-info"><div class="unlock-days">21 Días — Bloqueado</div><div class="unlock-title">Ceremonia de Sanación con Velas</div><div class="unlock-desc">Una ceremonia guiada de 21 minutos para liberar el duelo, el miedo y los bloqueos espirituales a través de la llama sagrada y la oración.</div></div><div><div class="badge-locked">🔒 14 días más</div></div></div>
+    <div class="unlock-card locked"><div class="unlock-icon" style="background:rgba(196,122,30,0.14)">👁️</div><div class="unlock-info"><div class="unlock-days">30 Días — Bloqueado</div><div class="unlock-title">La Profecía del Ángel</div><div class="unlock-desc">Gabriel revela una visión espiritual para el próximo capítulo de tu vida — tu misión, tus bendiciones y lo que el Cielo está preparando para ti.</div></div><div><div class="badge-locked">🔒 23 días más</div></div></div>
   </div>
   <div style="height:24px"></div>
   <div class="bottom-nav">
-    <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Home</div></div>
+    <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Inicio</div></div>
     <div class="nav-item" onclick="window.location.href='chat.html'"><div class="nav-item-icon">💬</div><div class="nav-item-label">Chat</div></div>
-    <div class="nav-item active"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Journey</div></div>
-    <div class="nav-item" onclick="window.location.href='prayers.html'"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Prayers</div></div>
+    <div class="nav-item active"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Camino</div></div>
+    <div class="nav-item" onclick="window.location.href='prayers.html'"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Oraciones</div></div>
   </div>
 </div>
 
@@ -576,33 +576,33 @@ html.light .today-title, html.light .today-date, html.light .today-week-theme { 
   <div class="topnav">
     <div class="back-btn" onclick="window.location.href='index.html'">‹</div>
     <div style="flex:1">
-      <div class="nav-logo" style="font-size:16px">Sacred Prayers</div>
-      <div style="font-size:13px;color:var(--text-dim);margin-top:1px" id="prayersNavSub">Loading...</div>
+      <div class="nav-logo" style="font-size:16px">Oraciones Sagradas</div>
+      <div style="font-size:13px;color:var(--text-dim);margin-top:1px" id="prayersNavSub">Cargando...</div>
     </div>
     <div class="theme-toggle" onclick="toggleTheme()" id="prayersToggle">🌙</div>
   </div>
   <div class="today-hero">
     <div class="today-card" onclick="openTodayPrayer()">
-      <div class="today-badge"><div class="live-dot"></div> Today's Prayer</div>
+      <div class="today-badge"><div class="live-dot"></div> Oración de Hoy</div>
       <div class="today-date" id="todayDate">—</div>
       <div class="today-title" id="todayTitle">—</div>
       <div class="today-week-theme" id="todayTheme">—</div>
-      <button class="today-btn" id="todayBtn">✦ Read Today's Prayer</button>
+      <button class="today-btn" id="todayBtn">✦ Leer la Oración de Hoy</button>
       <div class="today-deco">✦</div>
     </div>
   </div>
   <div class="progress-wrap">
-    <div class="progress-row"><div class="progress-lbl">Your prayer journey</div><div class="progress-val" id="progressVal">0 prayers said</div></div>
+    <div class="progress-row"><div class="progress-lbl">Tu camino de oración</div><div class="progress-val" id="progressVal">0 oraciones rezadas</div></div>
     <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
   </div>
-  <div class="section-header">All Prayers</div>
+  <div class="section-header">Todas las Oraciones</div>
   <div id="weeksContainer"></div>
   <div style="height:40px"></div>
   <div class="bottom-nav">
-    <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Home</div></div>
+    <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Inicio</div></div>
     <div class="nav-item" onclick="window.location.href='chat.html'"><div class="nav-item-icon">💬</div><div class="nav-item-label">Chat</div></div>
-    <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Journey</div></div>
-    <div class="nav-item active"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Prayers</div></div>
+    <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Camino</div></div>
+    <div class="nav-item active"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Oraciones</div></div>
   </div>
 </div>
 
@@ -659,7 +659,7 @@ function getDayInfo(n) {
   return { week:WEEKS[wi], wi, di };
 }
 function formatDate(d) {
-  return d.toLocaleDateString('en-US', { month:'long', day:'numeric' });
+  return d.toLocaleDateString('es-ES', { month:'long', day:'numeric' });
 }
 
 // ===== INIT =====
@@ -672,7 +672,7 @@ window.addEventListener('load', () => {
   if (savedName) {
     userName = savedName;
     const initial = savedName.charAt(0).toUpperCase();
-    document.getElementById('heroName').textContent = 'Welcome, ' + savedName;
+    document.getElementById('heroName').textContent = 'Bienvenida, ' + savedName;
     document.getElementById('navInitial').textContent = initial;
     document.getElementById('navInitial2').textContent = initial;
     // Skip transition delay — go straight to dashboard
@@ -756,10 +756,10 @@ function goTo(name) {
 async function enterPortal() {
   const name = document.getElementById('nameInput').value.trim();
   const email = document.getElementById('emailInput').value.trim();
-  if (!name || !email) { alert('Please enter your name and email to continue.'); return; }
+  if (!name || !email) { alert('Por favor ingresa tu nombre y correo electrónico para continuar.'); return; }
 
   const btn = document.querySelector('.btn-gold');
-  btn.textContent = 'Opening your sanctuary...';
+  btn.textContent = 'Abriendo tu santuario...';
   btn.disabled = true;
 
   try {
@@ -794,11 +794,11 @@ async function enterPortal() {
 
   userName = name;
   const initial = name.charAt(0).toUpperCase();
-  document.getElementById('heroName').textContent = 'Welcome, ' + name;
+  document.getElementById('heroName').textContent = 'Bienvenida, ' + name;
   document.getElementById('navInitial').textContent = initial;
   document.getElementById('navInitial2').textContent = initial;
 
-  btn.textContent = 'Enter the Portal ✦';
+  btn.textContent = 'Entrar al Portal ✦';
   btn.disabled = false;
   updateDashboardPills();
   goTo('dashboard');
@@ -810,7 +810,7 @@ function acceptIntention() {
   if (intentionDone) return;
   intentionDone = true;
   const btn = document.getElementById('acceptBtn');
-  btn.textContent = '✦ Intention Accepted';
+  btn.textContent = '✦ Intención Aceptada';
   btn.classList.add('done');
   const shimmer = document.getElementById('shimmer');
   shimmer.classList.add('active');
@@ -829,10 +829,10 @@ function initPrayers() {
     const key = `${info.wi}-${info.di}`;
     document.getElementById('todayDate').textContent = formatDate(today);
     document.getElementById('todayTitle').textContent = info.week.days[info.di].title;
-    document.getElementById('todayTheme').textContent = `Week ${info.wi+1} · ${info.week.theme}`;
+    document.getElementById('todayTheme').textContent = `Semana ${info.wi+1} · ${info.week.theme}`;
     const btn = document.getElementById('todayBtn');
-    if (prayed[key]) { btn.textContent = '✦ Prayer completed today'; btn.classList.add('done'); }
-    else { btn.textContent = '✦ Read Today\'s Prayer'; btn.classList.remove('done'); }
+    if (prayed[key]) { btn.textContent = '✦ Oración completada hoy'; btn.classList.add('done'); }
+    else { btn.textContent = '✦ Leer la Oración de Hoy'; btn.classList.remove('done'); }
   }
 
   buildWeeksAccordion();
@@ -870,7 +870,7 @@ function buildWeeksAccordion() {
       row.innerHTML = `
         <div class="day-circle">${done?'✦':di+1}</div>
         <div class="day-info">
-          <div class="day-date">${isToday?'📍 Today · ':''}${formatDate(dayDate)}</div>
+          <div class="day-date">${isToday?'📍 Hoy · ':''}${formatDate(dayDate)}</div>
           <div class="day-title">${day.title}</div>
         </div>
         <div class="day-status">${done?'✅':isToday?'🕯️':isLocked?'🔒':'›'}</div>`;
@@ -894,12 +894,12 @@ function openPrayer(wi, di) {
   dayDate.setDate(getJoinDate().getDate() + wi*7 + di);
   document.getElementById('modalTitle').textContent = day.title;
   document.getElementById('modalSub').textContent = formatDate(dayDate);
-  document.getElementById('modalWeekTag').textContent = `Week ${wi+1} · ${week.theme} · ${week.angel}`;
+  document.getElementById('modalWeekTag').textContent = `Semana ${wi+1} · ${week.theme} · ${week.angel}`;
   document.getElementById('modalPrayerTitle').textContent = day.title;
   document.getElementById('modalPrayerText').innerHTML = day.content.split('\n\n').map(p=>`<p>${p}</p>`).join('');
   const btn = document.getElementById('modalPrayBtn');
-  if (done) { btn.textContent='✦ Prayer completed'; btn.classList.add('done'); }
-  else { btn.textContent='🙏 I have prayed this today'; btn.classList.remove('done'); }
+  if (done) { btn.textContent='✦ Oración completada'; btn.classList.add('done'); }
+  else { btn.textContent='🙏 He rezado esto hoy'; btn.classList.remove('done'); }
   document.getElementById('prayerModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -915,7 +915,7 @@ function markPrayed() {
   prayed[key] = true;
   localStorage.setItem('ap_prayed', JSON.stringify(prayed));
   const btn = document.getElementById('modalPrayBtn');
-  btn.textContent = '✦ Prayer completed'; btn.classList.add('done');
+  btn.textContent = '✦ Oración completada'; btn.classList.add('done');
   showCelebration();
   setTimeout(() => { initPrayers(); }, 500);
 }
@@ -923,14 +923,14 @@ function markPrayed() {
 function updateProgress() {
   let total=0, done=0;
   WEEKS.forEach((w,wi) => w.days.forEach((_,di) => { total++; if(prayed[`${wi}-${di}`]) done++; }));
-  document.getElementById('progressVal').textContent = `${done} of ${total} prayers said`;
+  document.getElementById('progressVal').textContent = `${done} de ${total} oraciones rezadas`;
   document.getElementById('progressFill').style.width = Math.round(done/total*100)+'%';
 }
 
 // ===== CELEBRATION =====
 function showCelebration() {
   const week = WEEKS[modalWeek];
-  const messages = ['Heaven has heard your prayer','Your words have reached the angels','The light has received your prayer','Raphael carries your prayer forward'];
+  const messages = ['El Cielo ha escuchado tu oración','Tus palabras han llegado a los ángeles','La luz ha recibido tu oración','Gabriel lleva tu oración adelante'];
   document.getElementById('celebrationMsg').textContent = messages[Math.floor(Math.random()*messages.length)];
   document.getElementById('celebrationAngel').textContent = '— ' + week.angel;
   launchParticles();
@@ -976,31 +976,31 @@ function showStreakToast() {
 
   // Título
   const titles = {
-    1: 'Day 1 — Journey begins! ✦',
-    2: '2-day streak! 🔥',
-    3: '3 days — Dream Interpretation unlocked!',
-    7: '7-day streak — letter from Gabriel unlocked!',
-    14: '14 days — Sacred Name Ritual unlocked!',
-    21: '21 days — Healing Ceremony unlocked!',
-    30: '30 days — The Prophecy is yours!'
+    1: '¡Día 1 — El camino comienza! ✦',
+    2: '¡2 días de seguido! 🔥',
+    3: '¡3 días — Interpretación de Sueños desbloqueada!',
+    7: '¡7 días de seguido — carta de Gabriel desbloqueada!',
+    14: '¡14 días — Ritual del Nombre Sagrado desbloqueado!',
+    21: '¡21 días — Ceremonia de Sanación desbloqueada!',
+    30: '¡30 días — La Profecía es tuya!'
   };
   const subs = {
-    1: 'Gabriel is with you from the very first step.',
-    2: 'Two days in a row. Your angel notices.',
-    3: 'A new gift awaits you in Your Journey.',
-    7: 'A full week. Check Your Journey for a special gift.',
-    14: 'Your devotion has unlocked something sacred.',
-    21: 'Three weeks of connection. Gabriel is proud.',
-    30: 'A full month. The deepest gift is ready.'
+    1: 'Gabriel está contigo desde el primer paso.',
+    2: 'Dos días seguidos. Tu ángel lo nota.',
+    3: 'Un nuevo don te espera en Tu Camino.',
+    7: 'Una semana completa. Revisa Tu Camino para un regalo especial.',
+    14: 'Tu devoción ha desbloqueado algo sagrado.',
+    21: 'Tres semanas de conexión. Gabriel está orgulloso.',
+    30: 'Un mes completo. El don más profundo está listo.'
   };
   const defaultSubs = [
-    'Every return strengthens the bond.',
-    'Gabriel has been watching over you.',
-    'Your consistency is a form of prayer.',
-    'Heaven notices every time you show up.',
+    'Cada regreso fortalece el vínculo.',
+    'Gabriel ha estado velando por ti.',
+    'Tu constancia es una forma de oración.',
+    'El Cielo nota cada vez que apareces.',
   ];
 
-  document.getElementById('toastTitle').textContent = titles[dayNum] || `${dayNum}-day streak! 🔥`;
+  document.getElementById('toastTitle').textContent = titles[dayNum] || `¡${dayNum} días de seguido! 🔥`;
   document.getElementById('toastSub').textContent = subs[dayNum] || defaultSubs[dayNum % defaultSubs.length];
 
   // Dots — sempre 7, com janela deslizante centrada no dia atual

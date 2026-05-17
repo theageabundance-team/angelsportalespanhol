@@ -18,7 +18,7 @@ export default async function handler(req) {
   if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
 
   try {
-    const { dream = '', userName = 'dear one', memory = '' } = await req.json();
+    const { dream = '', userName = 'querido/a', memory = '' } = await req.json();
 
     if (!dream.trim()) return json({ error: 'No dream provided' }, 400);
 
@@ -67,6 +67,6 @@ TONE: Intimate, mystical, deeply personal. Never clinical or generic.`;
 
   } catch (err) {
     console.error('Dream error:', err.message);
-    return json({ error: 'Could not interpret dream' }, 500);
+    return json({ error: 'No se pudo interpretar el sueño' }, 500);
   }
 }

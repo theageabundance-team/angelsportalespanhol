@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="theme-color" content="#1a0a08">
-<title>Angels Portal — Sacred Prayers</title>
+<title>Angels Portal — Oraciones Sagradas</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
@@ -236,9 +236,9 @@ body::before {
 
 <div class="celebration" id="celebration">
   <div class="celebration-ring">🕯️</div>
-  <div class="celebration-heard">Heaven has heard</div>
-  <div class="celebration-message" id="celebrationMsg">Your prayer has been received</div>
-  <div class="celebration-angel" id="celebrationAngel">— Archangel Gabriel</div>
+  <div class="celebration-heard">El Cielo ha escuchado</div>
+  <div class="celebration-message" id="celebrationMsg">Tu oración ha sido recibida</div>
+  <div class="celebration-angel" id="celebrationAngel">— Arcángel Gabriel</div>
 </div>
 <div class="particles" id="particles"></div>
 
@@ -257,8 +257,8 @@ body::before {
     <div class="modal-prayer-text" id="modalPrayerText"></div>
     <div class="modal-ornament">✦ · ✦ · ✦</div>
     <div class="modal-actions">
-      <button class="modal-pray-btn" id="modalPrayBtn" onclick="markPrayed()">🙏 I have prayed this today</button>
-      <button class="modal-share-btn">↑ Share</button>
+      <button class="modal-pray-btn" id="modalPrayBtn" onclick="markPrayed()">🙏 He rezado esto hoy</button>
+      <button class="modal-share-btn">↑ Compartir</button>
     </div>
   </div>
 </div>
@@ -267,7 +267,7 @@ body::before {
 <div class="topnav">
   <div class="back-btn" onclick="window.location.href='index.html'">‹</div>
   <div class="nav-center">
-    <div class="nav-title">Sacred Prayers</div>
+    <div class="nav-title">Oraciones Sagradas</div>
     <div class="nav-sub" id="navSub">—</div>
   </div>
 </div>
@@ -275,75 +275,75 @@ body::before {
 <!-- Today -->
 <div class="today-hero">
   <div class="today-card" onclick="openTodayPrayer()">
-    <div class="today-badge"><div class="today-dot"></div> Today's Prayer</div>
+    <div class="today-badge"><div class="today-dot"></div> Oración de Hoy</div>
     <div class="today-date" id="todayDate">—</div>
     <div class="today-title" id="todayTitle">—</div>
     <div class="today-week-theme" id="todayTheme">—</div>
-    <button class="today-btn" id="todayBtn">🕯️ Read Today's Prayer</button>
+    <button class="today-btn" id="todayBtn">🕯️ Leer la Oración de Hoy</button>
     <div class="today-deco">✦</div>
   </div>
 </div>
 
 <!-- Progress -->
 <div class="progress-wrap">
-  <div class="progress-row"><div class="progress-lbl">Your prayer journey</div><div class="progress-val" id="progressVal">0 prayers said</div></div>
+  <div class="progress-row"><div class="progress-lbl">Tu camino de oración</div><div class="progress-val" id="progressVal">0 oraciones rezadas</div></div>
   <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
 </div>
 
-<div class="section-header">All Prayers</div>
+<div class="section-header">Todas las Oraciones</div>
 <div id="weeksContainer"></div>
 
 <div class="bottom-nav">
-  <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Home</div></div>
+  <div class="nav-item" onclick="window.location.href='index.html'"><div class="nav-item-icon">🏛️</div><div class="nav-item-label">Inicio</div></div>
   <div class="nav-item" onclick="window.location.href='chat.html'"><div class="nav-item-icon">💬</div><div class="nav-item-label">Chat</div></div>
-  <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Journey</div></div>
-  <div class="nav-item active"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Prayers</div></div>
+  <div class="nav-item" onclick="window.location.href='journey.html'"><div class="nav-item-icon">🔥</div><div class="nav-item-label">Camino</div></div>
+  <div class="nav-item active"><div class="nav-item-icon">🕯️</div><div class="nav-item-label">Oraciones</div></div>
 </div>
 
 <script>
 const WEEKS = [
-  { id:1, theme:"Protection and Abundance", angel:"Archangel Gabriel", color:"sky",
+  { id:1, theme:"Protección y Abundancia", angel:"Arcángel Gabriel", color:"sky",
     days:[
-      { title:"Shield of Light", content:"Archangel Gabriel, messenger of light and hope, I ask that you be my shield and my guide. Surround my paths with your light of purity, driving away any shadow of fear or doubt, and protecting my spirit from adversities and negative energies that try to cross my path.\n\nI also call upon your intercession so that abundance may flow into my life like an inexhaustible river. May the doors of prosperity open at the sound of your trumpet, bringing plenty to my table, clarity to my business, and peace to my heart, under the constant watch of the angels of provision. Amen." },
-      { title:"Protection Over My Home", content:"Glorious Gabriel, you who announced the greatest miracle of humanity, announce today safety within my home. May your white wings cover my family, creating a perimeter of protection where only love and harmony may enter, repelling all scarcity.\n\nI ask that, together with Archangel Michael, you cut the chains of financial limitation. May divine abundance reach me from expected and unexpected sources, multiplying my resources so that I may also be a channel of blessings in the lives of others." },
-      { title:"Words and Harvest", content:"Holy Archangel Gabriel, master of divine communication, protect my words and my interactions today. May I be shielded from misunderstandings, and may my harvest be protected by your celestial strength.\n\nMay the energy of abundance manifest in my health and vitality. With the help of Archangel Raphael, I ask that my body be a temple of vigor, allowing me to have the energy to build my wealth and enjoy the wonders the universe offers me." },
-      { title:"Dreams and Opportunity", content:"Archangel Gabriel, bearer of good news, watch over my dreams and my projects. May no external influence divert my focus from victory, and may your purifying light cleanse any trace of envy or obstacles in my professional journey.\n\nI invoke heavenly fullness so that my life overflows with opportunities. May Gabriel's wisdom show me where to plant my seeds so that abundance becomes the natural result of every effort I make." },
-      { title:"Armor of Light", content:"On this day, I ask Archangel Gabriel to seal my paths with his crystalline purity. May your protection be like an armor of light, preventing the dangers of daily life from touching my physical or emotional integrity.\n\nMay abundance not be just a concept, but a living reality in my hands. May the flow of money, ideas, and good connections be constant, bringing the certainty that I am fully provided for by heaven." },
-      { title:"Rest and Renewal", content:"Archangel Gabriel, angel of annunciation and sacred rest, protect my time of leisure and renewal. May your presence in my home drive away any worry, and may I feel the safety of being under the watchful gaze of the celestial legions.\n\nI give thanks for the abundance of happy moments and for the prosperity that already dwells within me. May Gabriel continue to announce blessings over all those I love." },
-      { title:"Closing the Cycle", content:"Archangel Gabriel, purify my soul of any weariness and renew my protection for the new cycle ahead. May I rest under the mantle of your serenity and rise again with the strength of a victor, ready to receive the miracles to come.\n\nMay the seed of abundance planted during these days flourish intensely. With the help of all guardian angels, I ask that spiritual and material prosperity be the foundation of my life, now and always. Amen." }
+      { title:"Escudo de Luz", content:"Arcángel Gabriel, mensajero de luz y esperanza, te pido que seas mi escudo y mi guía. Rodea mis caminos con tu luz de pureza, ahuyentando toda sombra de miedo o duda, y protegiendo mi espíritu de las adversidades y energías negativas que intenten cruzar mi senda.\n\nInvoco también tu intercesión para que la abundancia fluya en mi vida como un río inagotable. Que las puertas de la prosperidad se abran al sonido de tu trompeta, trayendo plenitud a mi mesa, claridad a mis asuntos y paz a mi corazón, bajo la constante vigilancia de los ángeles de la provisión. Amén." },
+      { title:"Protección Sobre Mi Hogar", content:"Glorioso Gabriel, tú que anunciaste el mayor milagro de la humanidad, anuncia hoy seguridad dentro de mi hogar. Que tus alas blancas cubran a mi familia, creando un perímetro de protección donde solo el amor y la armonía puedan entrar, repeliendo toda escasez.\n\nTe pido que, junto al Arcángel Miguel, cortes las cadenas de la limitación financiera. Que la abundancia divina llegue a mí desde fuentes esperadas e inesperadas, multiplicando mis recursos para que yo también pueda ser un canal de bendiciones en la vida de los demás." },
+      { title:"Palabras y Cosecha", content:"Santo Arcángel Gabriel, maestro de la comunicación divina, protege mis palabras y mis interacciones hoy. Que esté resguardado de los malentendidos, y que mi cosecha sea protegida por tu fuerza celestial.\n\nQue la energía de la abundancia se manifieste en mi salud y vitalidad. Con la ayuda del Arcángel Rafael, pido que mi cuerpo sea un templo de vigor, permitiéndome tener la energía para construir mi prosperidad y disfrutar de las maravillas que el universo me ofrece." },
+      { title:"Sueños y Oportunidad", content:"Arcángel Gabriel, portador de buenas noticias, vela por mis sueños y mis proyectos. Que ninguna influencia externa desvíe mi enfoque de la victoria, y que tu luz purificadora limpie cualquier rastro de envidia u obstáculos en mi camino profesional.\n\nInvoco la plenitud celestial para que mi vida desborde de oportunidades. Que la sabiduría de Gabriel me muestre dónde plantar mis semillas para que la abundancia sea el resultado natural de cada esfuerzo que realice." },
+      { title:"Armadura de Luz", content:"En este día, pido al Arcángel Gabriel que selle mis caminos con su pureza cristalina. Que tu protección sea como una armadura de luz, impidiendo que los peligros de la vida cotidiana toquen mi integridad física o emocional.\n\nQue la abundancia no sea solo un concepto, sino una realidad viva en mis manos. Que el flujo de dinero, ideas y buenas conexiones sea constante, trayendo la certeza de que estoy plenamente provisto por el cielo." },
+      { title:"Descanso y Renovación", content:"Arcángel Gabriel, ángel de la anunciación y del descanso sagrado, protege mi tiempo de descanso y renovación. Que tu presencia en mi hogar aleje toda preocupación, y que sienta la seguridad de estar bajo la mirada vigilante de las legiones celestiales.\n\nDoy gracias por la abundancia de momentos felices y por la prosperidad que ya mora en mí. Que Gabriel continúe anunciando bendiciones sobre todos los que amo." },
+      { title:"Cerrando el Ciclo", content:"Arcángel Gabriel, purifica mi alma de todo cansancio y renueva mi protección para el nuevo ciclo que se avecina. Que descanse bajo el manto de tu serenidad y me levante nuevamente con la fuerza de un vencedor, listo para recibir los milagros que están por venir.\n\nQue la semilla de abundancia plantada durante estos días florezca con intensidad. Con la ayuda de todos los ángeles guardianes, pido que la prosperidad espiritual y material sea el fundamento de mi vida, ahora y siempre. Amén." }
     ]
   },
-  { id:2, theme:"Clarity and Revelation", angel:"Archangel Gabriel", color:"crimson",
+  { id:2, theme:"Claridad y Revelación", angel:"Arcángel Gabriel", color:"crimson",
     days:[
-      { title:"Clear Vision at Dawn", content:"Archangel Gabriel, you who bring the messages of the Most High, cleanse my vision at this new beginning. I ask that you remove the mists of mental confusion so that I may clearly see every opportunity and every step I must take.\n\nMay divine revelation illuminate my intuition. With the help of Archangel Uriel, I ask that the light of truth shine in my mind, allowing me to make decisions based on wisdom rather than uncertainty." },
-      { title:"Sacred Hearing", content:"Holy Gabriel, angel of purity, purify my spiritual hearing. May I be able to hear the whispers of heaven amid the noise of the world, understanding the guidance sent to me for my growth and personal evolution.\n\nGive me clarity about my daily missions. May I not get lost in distractions, and may your trumpet sound in my heart whenever I need a reminder of what is truly essential." },
-      { title:"Truth in Relationships", content:"Archangel Gabriel, guide my thoughts toward the light. I ask that you bring clarity to my relationships and conversations, so that truth may be spoken with love.\n\nMay the revelation of new paths manifest in my life. I ask that Archangel Gabriel open my understanding to new ideas and creative solutions that were once hidden from my eyes." },
-      { title:"Illuminated Mind", content:"Glorious Gabriel, protector of truth seekers, illuminate my studies and my work. May I have ease in learning and clarity in teaching, becoming a transparent channel of divine intelligence wherever I go.\n\nRemove from me all illusion and deception. May Gabriel's strength reveal the true intentions behind others' words, giving me the discernment needed to walk with security and confidence." },
-      { title:"Honest Evaluation", content:"Archangel Gabriel, I ask that you bring clarity regarding the results of my efforts. May I evaluate my path with honesty, and may the revelations of heaven show me where I must adjust my plans.\n\nMay Archangel Jophiel join Gabriel to beautify my thoughts. May I see clarity in beauty and truth in simplicity, arriving at a place of light mind and peaceful spirit." },
-      { title:"Revelation in Rest", content:"Archangel Gabriel, angel of revelation, bring light into my moments of stillness. May my soul be instructed by you during this time of rest, and may I receive clear guidance with serenity and faith.\n\nI give thanks for the clarity I have received. May Gabriel's light continue to shine within me, revealing that the greatest truth is the love God has for me and for all creation." },
-      { title:"Mirror of the Soul", content:"As this cycle of clarity closes, Archangel Gabriel, I affirm my commitment to truth. May I not fear what is revealed to me, for divine light only exposes what needs to be healed or strengthened for my good.\n\nMay the days ahead be guided by a crystal-clear vision. I ask that Gabriel keep my mind like a clean mirror of the Creator's will, today and always. Amen." }
+      { title:"Visión Clara al Amanecer", content:"Arcángel Gabriel, tú que traes los mensajes del Altísimo, limpia mi visión en este nuevo comienzo. Te pido que retires las nieblas de la confusión mental para que pueda ver con claridad cada oportunidad y cada paso que debo dar.\n\nQue la revelación divina ilumine mi intuición. Con la ayuda del Arcángel Uriel, pido que la luz de la verdad brille en mi mente, permitiéndome tomar decisiones basadas en la sabiduría y no en la incertidumbre." },
+      { title:"Escucha Sagrada", content:"Santo Gabriel, ángel de pureza, purifica mi escucha espiritual. Que sea capaz de oír los susurros del cielo en medio del ruido del mundo, comprendiendo la guía que me es enviada para mi crecimiento y evolución personal.\n\nDame claridad sobre mis misiones cotidianas. Que no me pierda en las distracciones, y que tu trompeta suene en mi corazón cada vez que necesite un recordatorio de lo que es verdaderamente esencial." },
+      { title:"Verdad en las Relaciones", content:"Arcángel Gabriel, guía mis pensamientos hacia la luz. Te pido que traigas claridad a mis relaciones y conversaciones, para que la verdad pueda ser expresada con amor.\n\nQue la revelación de nuevos caminos se manifieste en mi vida. Pido que el Arcángel Gabriel abra mi entendimiento a nuevas ideas y soluciones creativas que antes estaban ocultas a mis ojos." },
+      { title:"Mente Iluminada", content:"Glorioso Gabriel, protector de los que buscan la verdad, ilumina mis estudios y mi trabajo. Que tenga facilidad para aprender y claridad para enseñar, convirtiéndome en un canal transparente de inteligencia divina dondequiera que vaya.\n\nAléjame de toda ilusión y engaño. Que la fuerza de Gabriel revele las verdaderas intenciones detrás de las palabras de los demás, dándome el discernimiento necesario para caminar con seguridad y confianza." },
+      { title:"Evaluación Honesta", content:"Arcángel Gabriel, te pido que traigas claridad sobre los resultados de mis esfuerzos. Que evalúe mi camino con honestidad, y que las revelaciones del cielo me muestren dónde debo ajustar mis planes.\n\nQue el Arcángel Jofiel se una a Gabriel para embellecer mis pensamientos. Que vea claridad en la belleza y verdad en la simplicidad, llegando a un lugar de mente liviana y espíritu en paz." },
+      { title:"Revelación en el Descanso", content:"Arcángel Gabriel, ángel de la revelación, trae luz a mis momentos de quietud. Que mi alma sea instruida por ti durante este tiempo de descanso, y que reciba una guía clara con serenidad y fe.\n\nDoy gracias por la claridad que he recibido. Que la luz de Gabriel continúe brillando en mí, revelando que la mayor verdad es el amor que Dios tiene por mí y por toda la creación." },
+      { title:"Espejo del Alma", content:"Al cerrar este ciclo de claridad, Arcángel Gabriel, afirmo mi compromiso con la verdad. Que no tema lo que me sea revelado, pues la luz divina solo expone lo que necesita ser sanado o fortalecido para mi bien.\n\nQue los días que vienen sean guiados por una visión cristalina. Pido que Gabriel mantenga mi mente como un espejo limpio de la voluntad del Creador, hoy y siempre. Amén." }
     ]
   },
-  { id:3, theme:"Surrender and Grace", angel:"Archangel Michael", color:"sky",
+  { id:3, theme:"Entrega y Gracia", angel:"Arcángel Miguel", color:"sky",
     days:[
-      { title:"Letting Go at the Threshold", content:"Archangel Michael, warrior of heaven and guardian of my soul, I stand at the threshold of a new beginning. I ask that your sword of light cut through every bond that holds me to what I must release — the fears I have named, and the ones I dare not speak aloud. Teach me that letting go is not losing, but rather making room for what heaven has already prepared.\n\nI surrender into your keeping all that I have been trying to control on my own. May your fierce and tender presence remind me that I am not abandoned in this emptiness, but held by grace. Guide my next step even when I cannot see the ground beneath my feet. Amen." },
-      { title:"The Weight I No Longer Carry", content:"Holy Michael, I come to you carrying what was never mine to bear alone. The worries of tomorrow, the wounds of yesterday, the judgments I have turned inward — I lay them all at your feet. May your golden shield reflect back to me only what is true and good, burning away the rest with compassion.\n\nI ask for the grace of a lighter spirit. May I move through this day unburdened, trusting that every need will be met in its time. Let your presence be the ground beneath me when my own strength gives way, and remind my heart that it was made for peace, not for strife." },
-      { title:"Open Hands", content:"Archangel Michael, I open my hands before heaven today. I release my grip on outcomes I have been squeezing too tightly, on words I wish I could unsay, on paths that have already closed behind me. May your light pour through my open palms and consecrate this act of surrender as an offering of trust.\n\nFill these hands now with what is truly mine — purpose, courage, and the quiet certainty that I am guided. May every good thing I am meant to receive find me with hands and heart wide open, ready to steward each gift with faithfulness and gratitude." },
-      { title:"Peace in the Unknown", content:"Glorious Michael, commander of the celestial armies, I confess that the unknown unsettles me. But you have never been absent from the dark places, and I ask today for the peace that does not depend on answers. May your presence be the still point at the center of my uncertainty, the calm that holds even when my mind cannot rest.\n\nI ask that divine wisdom reach me in the silence between my questions. May I learn to dwell in the unknown not with dread, but with the expectation of a pilgrim who trusts the guide. Walk with me through what I cannot yet see, and let your light be enough for each step." },
-      { title:"Trusting the River", content:"Archangel Michael, you who move through the heavens without hesitation, teach me the art of holy surrender. I have spent many days swimming against the current of my own life. Today I choose to trust the river — to believe that the flow of grace carries me toward destinations greater than I have imagined.\n\nSurround me with the assurance that surrender is not weakness but wisdom. May the angels of peace accompany me today, whispering that I am exactly where I need to be. May divine timing work in my favor, and may I release the need to force what only grace can open." },
-      { title:"Grace in Weakness", content:"Holy Archangel Michael, I come to you not in triumph but in honesty — acknowledging the places where I have fallen short, the moments I did not meet the standard I hold for myself. I ask for the grace that meets me in my weakness, not with condemnation, but with the steady love of heaven.\n\nMay your protection extend not only around me but within me, guarding the tender places I usually keep hidden. I ask for the strength to be gentle with myself, to see my limitations not as defects but as invitations to lean on something greater. Let grace have the final word today." },
-      { title:"The Gift of Enough", content:"Archangel Michael, as this week of surrender draws to a close, I give thanks for the grace that sustained me. I declare today that I am enough — not because I have done everything right, but because I am held by a love that does not depend on my performance.\n\nMay this truth settle deep into my bones and become the foundation from which I move into the days ahead. I ask that you seal this week with your divine protection, carrying forward all that was offered and all that was received. May I enter the next season of my journey rested, restored, and ready. Amen." }
+      { title:"Soltando en el Umbral", content:"Arcángel Miguel, guerrero del cielo y guardián de mi alma, me encuentro en el umbral de un nuevo comienzo. Te pido que tu espada de luz corte cada vínculo que me ata a lo que debo soltar: los miedos que he nombrado y los que no me atrevo a pronunciar en voz alta. Enséñame que soltar no es perder, sino hacer espacio para lo que el cielo ya ha preparado.\n\nEntrego a tu cuidado todo lo que he estado intentando controlar por mi cuenta. Que tu presencia, a la vez feroz y tierna, me recuerde que no estoy abandonado en este vacío, sino sostenido por la gracia. Guía mi próximo paso incluso cuando no pueda ver el suelo bajo mis pies. Amén." },
+      { title:"El Peso que Ya No Cargo", content:"Santo Miguel, vengo a ti cargando lo que nunca fue mío llevar solo. Las preocupaciones del mañana, las heridas del ayer, los juicios que he vuelto contra mí mismo: los deposito todos a tus pies. Que tu escudo dorado me refleje solo lo que es verdadero y bueno, consumiendo todo lo demás con compasión.\n\nPido la gracia de un espíritu más liviano. Que transcurra este día sin cargas, confiando en que cada necesidad será satisfecha en su tiempo. Que tu presencia sea el suelo bajo mis pies cuando mis propias fuerzas cedan, y recuérdale a mi corazón que fue hecho para la paz, no para la lucha." },
+      { title:"Manos Abiertas", content:"Arcángel Miguel, abro mis manos ante el cielo hoy. Suelto mi apego a resultados que he estado apretando demasiado fuerte, a palabras que desearía no haber dicho, a caminos que ya se cerraron detrás de mí. Que tu luz fluya a través de mis palmas abiertas y consagre este acto de entrega como una ofrenda de confianza.\n\nLlena ahora estas manos con lo que verdaderamente me pertenece: propósito, valentía y la silenciosa certeza de que estoy guiado. Que todo bien que estoy destinado a recibir me encuentre con las manos y el corazón abiertos de par en par, listo para custodiar cada don con fidelidad y gratitud." },
+      { title:"Paz en lo Desconocido", content:"Glorioso Miguel, comandante de los ejércitos celestiales, confieso que lo desconocido me inquieta. Pero nunca has estado ausente de los lugares oscuros, y hoy pido la paz que no depende de las respuestas. Que tu presencia sea el punto de quietud en el centro de mi incertidumbre, la calma que sostiene incluso cuando mi mente no puede descansar.\n\nPido que la sabiduría divina me alcance en el silencio entre mis preguntas. Que aprenda a habitar lo desconocido no con temor, sino con la expectativa de un peregrino que confía en el guía. Camina conmigo a través de lo que aún no puedo ver, y que tu luz sea suficiente para cada paso." },
+      { title:"Confiando en el Río", content:"Arcángel Miguel, tú que te mueves por los cielos sin vacilación, enséñame el arte de la entrega sagrada. He pasado muchos días nadando contra la corriente de mi propia vida. Hoy elijo confiar en el río: creer que el flujo de la gracia me lleva hacia destinos más grandes de los que he imaginado.\n\nRodéame de la certeza de que entregarse no es debilidad sino sabiduría. Que los ángeles de la paz me acompañen hoy, susurrando que estoy exactamente donde necesito estar. Que el tiempo divino trabaje a mi favor, y que suelte la necesidad de forzar lo que solo la gracia puede abrir." },
+      { title:"Gracia en la Debilidad", content:"Santo Arcángel Miguel, vengo a ti no en triunfo sino en honestidad: reconociendo los lugares donde me he quedado corto, los momentos en que no alcancé el estándar que me exijo. Pido la gracia que me encuentra en mi debilidad, no con condenación, sino con el amor firme del cielo.\n\nQue tu protección se extienda no solo a mi alrededor sino dentro de mí, guardando los lugares tiernos que generalmente mantengo ocultos. Pido la fuerza para ser gentil conmigo mismo, para ver mis limitaciones no como defectos sino como invitaciones a apoyarme en algo más grande. Que la gracia tenga la última palabra hoy." },
+      { title:"El Don de lo Suficiente", content:"Arcángel Miguel, al cerrar esta semana de entrega, doy gracias por la gracia que me sostuvo. Declaro hoy que soy suficiente: no porque haya hecho todo bien, sino porque soy sostenido por un amor que no depende de mi desempeño.\n\nQue esta verdad se asiente profundamente en mi ser y se convierta en el fundamento desde el cual me muevo hacia los días que vienen. Te pido que sellesesta semana con tu protección divina, llevando adelante todo lo que fue ofrecido y todo lo que fue recibido. Que entre en la próxima etapa de mi camino descansado, restaurado y listo. Amén." }
     ]
   },
-  { id:4, theme:"Renewal and Rising", angel:"Archangel Raphael", color:"crimson",
+  { id:4, theme:"Renovación y Resurgimiento", angel:"Arcángel Rafael", color:"crimson",
     days:[
-      { title:"New Breath", content:"Archangel Raphael, healer of souls and physician of heaven, breathe new life into me today. Where exhaustion has settled into my bones, I ask for your renewing wind. May every part of my being be touched by divine vitality, and may the places where I have been worn down become the very places where restoration begins.\n\nI open myself to healing that goes beyond the physical — the healing of memories, of wounds carried quietly, of the tender bruises I have learned to work around. May your light move through me like a river of restoration, leaving wholeness in its wake." },
-      { title:"Healing What Words Could Not", content:"Holy Raphael, you reach into the places where language fails. I bring to you today the hurts I have never been able to fully explain — the grief without a name, the love that went unexpressed, the apologies that arrived too late or not at all. I ask that your healing presence move into these wordless spaces.\n\nMay divine comfort find me where logic cannot. May I receive the tenderness of heaven as a balm for what still aches, and may I extend that same tenderness toward others who carry their own invisible wounds. Let healing be a circle that I both receive and give." },
-      { title:"Roots and Wings", content:"Archangel Raphael, I ask for the wisdom to know when to hold and when to soar. May you strengthen my roots — my sense of belonging, my connection to what is sacred, my trust in those who love me faithfully. May these roots be so deep that no wind of circumstance can uproot the peace within me.\n\nAnd then give me wings — the courage to rise above old patterns, to see my life from a higher vantage point, to believe that the horizon holds more than I have already known. May your healing presence be the bridge between my deepest groundedness and my highest aspiration." },
-      { title:"The Courage to Begin Again", content:"Glorious Raphael, companion of travelers and guardian of new beginnings, I ask today for the courage to start again. Not because I have erased my history, but because I choose to be unbound by it. May your healing light dissolve the shame of past failures and replace it with the clean energy of a new morning.\n\nI ask that Archangel Michael join you today to clear the path ahead of any remaining obstacles. May I move forward with the lightness of someone who has been genuinely forgiven — not carrying the past but learning from it, free to put one foot in front of the other with hope." },
-      { title:"Wholeness", content:"Archangel Raphael, I ask today not for perfection but for wholeness. May the fragmented parts of myself — the hidden and the visible, the celebrated and the ashamed — be gathered and held together in the light of divine love. I do not need to have it all figured out to be complete.\n\nMay your healing touch reach the younger versions of me still waiting for reassurance, still holding their breath. Tell them they are safe. Tell them they are loved. Tell them the story turns out better than they feared. I receive this healing on their behalf and on mine, trusting that wholeness is not earned but given." },
-      { title:"Walking in the Light", content:"Holy Raphael, as this month nears its close, I ask that you walk beside me in the light. May my steps be guided not by anxiety about what lies ahead, but by the quiet confidence of someone who has been accompanied through every season. Let gratitude be my gait and trust be my direction.\n\nI give thanks for every healing that happened in ways I did not expect — through a conversation, a silence, a sudden shift in perspective. May I recognize the hand of heaven in the small mercies as readily as in the great ones, and carry this awareness as a lantern into the days to come." },
-      { title:"Covenant of Joy", content:"Archangel Raphael, I close this month with a declaration of joy. Not the fleeting happiness that depends on circumstances, but the deep, unshakeable joy that comes from knowing I am loved, held, and accompanied. May this joy be a covenant between my soul and heaven — a promise I return to whenever fear tries to make me forget.\n\nMay the renewal that began in these days continue to unfold in the weeks and months ahead. I ask that you carry this prayer forward, Raphael, as a seal of all that has been healed, opened, and made new. May I enter what comes next with a full heart, clear eyes, and faith that the best is still ahead. Amen." }
+      { title:"Nuevo Aliento", content:"Arcángel Rafael, sanador de almas y médico del cielo, insufla nueva vida en mí hoy. Donde el agotamiento se ha asentado en mis huesos, pido tu viento renovador. Que cada parte de mi ser sea tocada por la vitalidad divina, y que los lugares donde he sido desgastado se conviertan precisamente en los lugares donde comienza la restauración.\n\nMe abro a una sanación que va más allá de lo físico: la sanación de los recuerdos, de las heridas llevadas en silencio, de los golpes tiernos que he aprendido a sortear. Que tu luz se mueva a través de mí como un río de restauración, dejando plenitud a su paso." },
+      { title:"Sanando lo que las Palabras No Pudieron", content:"Santo Rafael, tú que alcanzas los lugares donde el lenguaje falla. Te traigo hoy las heridas que nunca he podido explicar del todo: el duelo sin nombre, el amor que quedó sin expresar, las disculpas que llegaron demasiado tarde o no llegaron nunca. Te pido que tu presencia sanadora se mueva hacia estos espacios sin palabras.\n\nQue el consuelo divino me encuentre donde la lógica no puede. Que reciba la ternura del cielo como bálsamo para lo que aún duele, y que extienda esa misma ternura hacia los demás que cargan sus propias heridas invisibles. Que la sanación sea un círculo que tanto recibo como doy." },
+      { title:"Raíces y Alas", content:"Arcángel Rafael, pido la sabiduría para saber cuándo sostener y cuándo volar. Que fortalezcas mis raíces: mi sentido de pertenencia, mi conexión con lo sagrado, mi confianza en quienes me aman fielmente. Que estas raíces sean tan profundas que ningún viento de las circunstancias pueda desarraigar la paz que mora en mí.\n\nY luego dame alas: el valor para elevarse por encima de los viejos patrones, para ver mi vida desde un punto de vista más alto, para creer que el horizonte guarda más de lo que ya he conocido. Que tu presencia sanadora sea el puente entre mi arraigo más profundo y mi aspiración más elevada." },
+      { title:"El Coraje de Comenzar de Nuevo", content:"Glorioso Rafael, compañero de los viajeros y guardián de los nuevos comienzos, pido hoy el valor para empezar de nuevo. No porque haya borrado mi historia, sino porque elijo no estar atado a ella. Que tu luz sanadora disuelva la vergüenza de los fracasos pasados y la reemplace con la energía fresca de una nueva mañana.\n\nPido que el Arcángel Miguel se una a ti hoy para despejar el camino de cualquier obstáculo restante. Que avance con la ligereza de alguien que ha sido genuinamente perdonado: no cargando el pasado sino aprendiendo de él, libre de poner un pie delante del otro con esperanza." },
+      { title:"Plenitud", content:"Arcángel Rafael, pido hoy no la perfección sino la plenitud. Que las partes fragmentadas de mí mismo: las ocultas y las visibles, las celebradas y las avergonzadas, sean reunidas y sostenidas juntas en la luz del amor divino. No necesito tenerlo todo resuelto para estar completo.\n\nQue tu toque sanador alcance las versiones más jóvenes de mí que aún esperan ser tranquilizadas, que aún contienen la respiración. Diles que están seguros. Diles que son amados. Diles que la historia termina mejor de lo que temían. Recibo esta sanación en nombre de ellos y en el mío, confiando en que la plenitud no se gana sino que se recibe." },
+      { title:"Caminando en la Luz", content:"Santo Rafael, al acercarse el cierre de este mes, te pido que camines a mi lado en la luz. Que mis pasos sean guiados no por la ansiedad sobre lo que hay por delante, sino por la tranquila confianza de alguien que ha sido acompañado en cada estación. Que la gratitud sea mi paso y la confianza mi dirección.\n\nDoy gracias por cada sanación que ocurrió de maneras que no esperaba: a través de una conversación, un silencio, un giro repentino en la perspectiva. Que reconozca la mano del cielo en las pequeñas misericordias con la misma facilidad que en las grandes, y lleve esta conciencia como un farol hacia los días por venir." },
+      { title:"Pacto de Alegría", content:"Arcángel Rafael, cierro este mes con una declaración de alegría. No la felicidad fugaz que depende de las circunstancias, sino la alegría profunda e inquebrantable que viene de saber que soy amado, sostenido y acompañado. Que esta alegría sea un pacto entre mi alma y el cielo: una promesa a la que vuelvo cada vez que el miedo intenta hacerme olvidar.\n\nQue la renovación que comenzó en estos días continúe desplegándose en las semanas y meses que vienen. Te pido que lleves esta oración adelante, Rafael, como sello de todo lo que ha sido sanado, abierto y hecho nuevo. Que entre en lo que viene con el corazón lleno, los ojos claros y la fe de que lo mejor aún está por llegar. Amén." }
     ]
   }
 ];
@@ -374,7 +374,7 @@ function getJoinDate() {
 }
 function getDayNumber() { return Math.max(1, Math.floor((new Date()-getJoinDate())/86400000)+1); }
 function getDayInfo(n) { const wi=Math.floor((n-1)/7),di=(n-1)%7; if(wi>=WEEKS.length)return null; return{week:WEEKS[wi],wi,di}; }
-function formatDate(d) { return d.toLocaleDateString('en-US',{month:'long',day:'numeric'}); }
+function formatDate(d) { return d.toLocaleDateString('es-ES',{month:'long',day:'numeric'}); }
 
 window.addEventListener('load',()=>{
   buildEmbers();
@@ -384,9 +384,9 @@ window.addEventListener('load',()=>{
     const key=`${info.wi}-${info.di}`, done=prayed[key];
     document.getElementById('todayDate').textContent=formatDate(today).toUpperCase();
     document.getElementById('todayTitle').textContent=info.week.days[info.di].title;
-    document.getElementById('todayTheme').textContent=`Week ${info.wi+1} · ${info.week.theme}`;
+    document.getElementById('todayTheme').textContent=`Semana ${info.wi+1} · ${info.week.theme}`;
     const btn=document.getElementById('todayBtn');
-    if(done){btn.textContent='✦ Prayer completed today';btn.classList.add('done');}
+    if(done){btn.textContent='✦ Oración completada hoy';btn.classList.add('done');}
   }
   buildAccordion(); updateProgress();
 });
@@ -426,7 +426,7 @@ function buildAccordion(){
       row.className='day-row'+(isToday?' today-row':'')+(done?' done-row':'')+(isLocked?' locked':'');
       row.innerHTML=`
         <div class="day-circle">${done?'✦':di+1}</div>
-        <div class="day-info"><div class="day-date">${isToday?'📍 Today · ':''}${formatDate(dd)}</div><div class="day-title">${day.title}</div></div>
+        <div class="day-info"><div class="day-date">${isToday?'📍 Hoy · ':''}${formatDate(dd)}</div><div class="day-title">${day.title}</div></div>
         <div class="day-status">${done?'✅':isToday?'🕯️':isLocked?'🔒':'›'}</div>`;
       if(!isLocked) row.onclick=()=>openPrayer(wi,di);
       daysEl.appendChild(row);
@@ -442,12 +442,12 @@ function openPrayer(wi,di){
   const dd=new Date(getJoinDate()); dd.setDate(getJoinDate().getDate()+wi*7+di);
   document.getElementById('modalTitle').textContent=day.title;
   document.getElementById('modalSub').textContent=formatDate(dd);
-  document.getElementById('modalWeekTag').textContent=`Week ${wi+1} · ${week.theme} · ${week.angel}`;
+  document.getElementById('modalWeekTag').textContent=`Semana ${wi+1} · ${week.theme} · ${week.angel}`;
   document.getElementById('modalPrayerTitle').textContent=day.title;
   document.getElementById('modalPrayerText').innerHTML=day.content.split('\n\n').map(p=>`<p>${p}</p>`).join('');
   const btn=document.getElementById('modalPrayBtn');
-  if(done){btn.textContent='✦ Prayer completed';btn.classList.add('done');}
-  else{btn.textContent='🙏 I have prayed this today';btn.classList.remove('done');}
+  if(done){btn.textContent='✦ Oración completada';btn.classList.add('done');}
+  else{btn.textContent='🙏 He rezado esto hoy';btn.classList.remove('done');}
   document.getElementById('prayerModal').classList.add('open');
   document.body.style.overflow='hidden';
 }
@@ -460,7 +460,7 @@ function markPrayed(){
   prayed[key]=true; localStorage.setItem('ap_prayed',JSON.stringify(prayed));
   syncPrayersToCloud();
   const btn=document.getElementById('modalPrayBtn');
-  btn.textContent='✦ Prayer completed'; btn.classList.add('done');
+  btn.textContent='✦ Oración completada'; btn.classList.add('done');
   showCelebration();
   setTimeout(()=>{ buildAccordion(); updateProgress(); },500);
 }
@@ -468,13 +468,13 @@ function markPrayed(){
 function updateProgress(){
   let total=0,done=0;
   WEEKS.forEach((w,wi)=>w.days.forEach((_,di)=>{total++;if(prayed[`${wi}-${di}`])done++;}));
-  document.getElementById('progressVal').textContent=`${done} of ${total} prayers said`;
+  document.getElementById('progressVal').textContent=`${done} de ${total} oraciones rezadas`;
   document.getElementById('progressFill').style.width=Math.round(done/total*100)+'%';
 }
 
 function showCelebration(){
   const week=WEEKS[modalWeek];
-  const msgs=['Heaven has heard your prayer','Your words have reached the angels','The light has received your prayer','Gabriel carries your prayer forward'];
+  const msgs=['El Cielo ha escuchado tu oración','Tus palabras han llegado a los ángeles','La luz ha recibido tu oración','Gabriel lleva tu oración adelante'];
   document.getElementById('celebrationMsg').textContent=msgs[Math.floor(Math.random()*msgs.length)];
   document.getElementById('celebrationAngel').textContent='— '+week.angel;
   launchParticles();
